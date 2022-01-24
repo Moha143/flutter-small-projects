@@ -1,0 +1,26 @@
+   Container(
+                margin: EdgeInsets.only(top: 20),
+                decoration: BoxDecoration(
+                    border: Border.all(
+                        color: Colors.grey.shade700, style: BorderStyle.solid),
+                    borderRadius: BorderRadius.circular(50)),
+                child: Column(
+                  children: [
+                    const TextField(
+                      keyboardType:
+                          TextInputType.numberWithOptions(decimal: true),
+                      style: TextStyle(
+                        fontSize: 19,
+                      ),
+                      decoration: InputDecoration(
+                          prefixText: "Enter Amount",
+                          prefixIcon: Icon(Icons.attach_money)),
+                    ),
+                    Row(
+                      // ignore: prefer_const_literals_to_create_immutables
+                      children: [InkWell()],
+                    )
+                  ],
+                ),
+              )
+           
